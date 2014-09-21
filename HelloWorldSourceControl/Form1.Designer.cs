@@ -30,13 +30,14 @@
         {
             this.buttonGoodbye = new System.Windows.Forms.Button();
             this.labelHelloWorld = new System.Windows.Forms.Label();
+            this.buttonClose = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // buttonGoodbye
             // 
-            this.buttonGoodbye.Location = new System.Drawing.Point(157, 125);
+            this.buttonGoodbye.Location = new System.Drawing.Point(30, 258);
             this.buttonGoodbye.Name = "buttonGoodbye";
-            this.buttonGoodbye.Size = new System.Drawing.Size(173, 51);
+            this.buttonGoodbye.Size = new System.Drawing.Size(93, 51);
             this.buttonGoodbye.TabIndex = 0;
             this.buttonGoodbye.Text = "Goodbye";
             this.buttonGoodbye.UseVisualStyleBackColor = true;
@@ -51,11 +52,22 @@
             this.labelHelloWorld.TabIndex = 1;
             this.labelHelloWorld.Text = "Hello World";
             // 
+            // buttonClose
+            // 
+            this.buttonClose.Location = new System.Drawing.Point(421, 261);
+            this.buttonClose.Name = "buttonClose";
+            this.buttonClose.Size = new System.Drawing.Size(86, 48);
+            this.buttonClose.TabIndex = 2;
+            this.buttonClose.Text = "Close";
+            this.buttonClose.UseVisualStyleBackColor = true;
+            this.buttonClose.Click += new System.EventHandler(this.buttonClose_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(519, 354);
+            this.Controls.Add(this.buttonClose);
             this.Controls.Add(this.labelHelloWorld);
             this.Controls.Add(this.buttonGoodbye);
             this.Name = "Form1";
@@ -69,6 +81,7 @@
 
         private System.Windows.Forms.Button buttonGoodbye;
         private System.Windows.Forms.Label labelHelloWorld;
+        private System.Windows.Forms.Button buttonClose;
     }
 }
 
