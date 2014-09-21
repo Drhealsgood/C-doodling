@@ -16,5 +16,17 @@ namespace HelloWorldSourceControl
         {
             InitializeComponent();
         }
+
+        /// <summary>
+        /// Upon clicking Goodbye button the user will be prompted with a message
+        /// and the program will be closed.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void buttonGoodbye_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Goodbye World!");
+            this.Close();
+        }
     }
 }
